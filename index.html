@@ -270,22 +270,29 @@ button:active { transform: scale(0.98); }
 </audio>
 
 <script>
+</body>
+      <audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
 function showLove() {
-  document.getElementById('msg').style.display = 'block';
+  document.getElementById("msg").style.display = "block";
 }
 
 function toggleMusic() {
-  const music = document.getElementById('bgMusic');
-  const btn = document.getElementById('musicBtn');
+  const music = document.getElementById("bgMusic");
+  const btn = document.getElementById("musicBtn");
 
   if (music.paused) {
     music.play();
-    btn.innerText = 'Stop music';
+    btn.innerText = "Stop music";
   } else {
     music.pause();
-    btn.innerText = 'Play soft music';
+    btn.innerText = "Play soft music";
   }
 }
+</script>
 </script>
       if (musicOn) stopMusic();
       else startMusic();
